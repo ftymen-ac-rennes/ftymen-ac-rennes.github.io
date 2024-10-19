@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Site NSI</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les principales balises HTML</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
+    <header>
+      <h1>Mon Site Web NSI</h1>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#balises-html">Balises HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav>
-      <a href="index.html">
-        <img src="images/home.png" width ="50px" height="50px">  
-      </a>
-      <a href="carnet.html">
-        <img src="images/carnet.jpg" width ="50px" height="50px">  
-      </a>
-      <a href="carnet.html">
-        <img src="images/js.png" width ="50px" height="50px">  
-      </a>
-    </nav>
+    <section id="accueil">
+      <h2>Bienvenue</h2>
+      <p>Ce site illustre les principales balises HTML et quelques concepts CSS.</p>
+      <img src="logo.png" alt="Logo du site" class="image">
+    </section>
 
-    
-    <h1>Titre de niveau 1</h1>
-    <h2>Titre de niveau 2</h2>
-    <h6>Titre de niveau 6</h6>
+    <section id="balises-html">
+      <h2>Les principales balises HTML</h2>
+      <h3>Exemple de titre et de paragraphe</h3>
+      <p>Ceci est un paragraphe de texte qui décrit quelque chose d'important.</p>
 
-    
-    <p>Un premier paragraphe, 
-      <br>
-    Une deuxième ligne de mon paragraphe
-    </p>
-    
-    <div style="display:flex">
-        <img src="nsi.png" width="200px" >&nbsp;
-        <img src="nsi.png" width="200px">
-    </div>
+      <h3>Liste non ordonnée</h3>
+      <ul>
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+        <li>Élément 3</li>
+      </ul>
 
-        <img src="nsi.png" width="200px" >&nbsp;
-        <img src="nsi.png" width="200px">
-    
-    <div style="display:inline">
-        <img src="nsi.png" width="200px" >&nbsp;
-        <img src="nsi.png" width="200px">
-    </div>
-    
+      <h3>Liste ordonnée</h3>
+      <ol>
+        <li>Premier élément</li>
+        <li>Deuxième élément</li>
+        <li>Troisième élément</li>
+      </ol>
+
+      <h3>Tableau</h3>
+      <table>
+        <tr>
+          <th>Nom</th>
+          <th>Âge</th>
+        </tr>
+        <tr>
+          <td>Jean</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Marie</td>
+          <td>25</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="css">
+      <h2>Les principales propriétés CSS</h2>
+      <h3>Exemple de bordure et de padding</h3>
+      <div class="box">
+        <p>Ce texte est entouré d'une bordure noire et d'un padding de 10px.</p>
+      </div>
+
+      <h3>Effets au survol</h3>
+      <p class="hover-text">Passez la souris sur ce texte pour changer sa couleur.</p>
+      <p class="hover-size">Passez la souris sur ce texte pour l'agrandir.</p>
+      <div class="hover-background">Passez la souris ici pour changer la couleur de l'arrière-plan.</div>
+      <button class="hover-scale">Passez la souris sur ce bouton pour l'agrandir.</button>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Mon Site Web NSI</p>
+    </footer>
   </body>
-
 </html>
